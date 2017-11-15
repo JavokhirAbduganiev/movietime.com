@@ -1,0 +1,115 @@
+/* Below codes are here to make close button in search bar */
+
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+	padding: 0px;
+}
+
+.close-icon {
+	border: 2px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  	outline: 0;
+  	cursor: pointer;
+}
+
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 18px;
+	height: 20px;
+	position: absolute;
+	background-color: #5998ff;
+	z-index:1;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 70%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 10px;
+	box-shadow: 0 0 2px white;
+	cursor: pointer;
+}
+
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+
+/* Below codes are here to make scroll-to-top button */
+
+#back-top {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+}
+
+#back-top a {
+	width: 40px;
+	display: block;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon */
+#back-top span {
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-bottom: 7px;
+	background: #26456e  url(images/uparrow.png) no-repeat center center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	background-color: #5998ff;
+}
+
+#back-top a:hover span {
+	background-color: black;
+}
+
+/* Below codes are here to customize center footer */
+
+.icon {
+    position: relative;
+    padding-top: 2%;
+    margin-left: 3%;
+    margin-right: -5%;
+    align-items: center;
+}
+
+.footer-icon {
+    padding-left: 22%;
+    padding-bottom: 30%;
+}
+
+.icon-text {
+    align-items: center;
+}
+
+.icon-text > h3 {
+    margin-bottom: 12%;
+    margin-top: 4%;
+    color: black;
+    font-size: 17px;
+}
+
+/* Below code is here to give background color to the searched word in search bar in about page*/
+
+c {
+	background-color: #5998ff;
+}
